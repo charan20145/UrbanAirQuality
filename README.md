@@ -1,6 +1,6 @@
 # 🌍 Urban Air Quality Prediction and Analysis Dashboard
 
-## 📘 Project Overview
+##  Project Overview
 The **Urban Air Quality Dashboard** is a data-driven project designed to **analyze, visualize, and forecast air quality (AQI)** across cities using **multi-source environmental, meteorological, and traffic data**.  
 
 By leveraging **machine learning and deep learning models**, this dashboard predicts pollution levels, supports **real-time monitoring**, and provides valuable insights for decision-making in **urban sustainability, climate resilience, and public health management**.
@@ -9,7 +9,7 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project sh
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - To integrate multi-source environmental and meteorological data for urban AQI prediction.  
 - To design an **interactive Streamlit dashboard** for visualizing air quality patterns.  
 - To compare predictive performance across **Random Forest, XGBoost, and LSTM** models.  
@@ -18,18 +18,18 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project sh
 
 ---
 
-## ✨ Key Features
-✅ **Dataset Analysis Mode**
+##  Key Features
+ **Dataset Analysis Mode**
 - Analyze historical air quality data with interactive filters and date ranges.  
 - Visualize pollutant patterns, correlations, and spatial intensity.  
 - Train and compare predictive models for AQI forecasting.  
 
-✅ **Real-Time Monitoring Mode**
+ **Real-Time Monitoring Mode**
 - Fetch **live AQI and weather data** from the OpenWeatherMap API.  
 - Display current pollutant concentrations and weather parameters.  
 - Generate **short-term forecast charts** for the next 12–48 hours.  
 
-✅ **Visualization Highlights**
+ **Visualization Highlights**
 - AQI trends over time  
 - Correlation heatmaps  
 - Traffic congestion vs pollution scatterplots  
@@ -55,14 +55,16 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project sh
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
+###  Clone the Repository
 ```bash
+
 git clone https://github.com/<YOUR-USERNAME>/UrbanAirQuality.git
 cd UrbanAirQuality
-2️⃣ Create and Activate a Virtual Environment
+Create and Activate a Virtual Environment
 python -m venv .venv
 .venv\Scripts\activate
-3️⃣ Install Required Libraries
+
+Install Required Libraries
 pip install -r requirements.txt
 Model Training
 python model_training.pyrandom_forest_model.pkl
@@ -86,4 +88,4 @@ UrbanAirQuality/
 └── visuals/                     # Screenshots and figures (optional)
 
 
-this my github readme full script,update it to work correctry and proffesionally
+
