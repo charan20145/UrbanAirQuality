@@ -49,9 +49,11 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project sh
 - Visual Studio Code / Jupyter Notebook  
 - Streamlit for dashboard deployment  
 - OpenWeatherMap API for live data  
-- Git & GitHub for version control  
+- Git & GitHub for version control
 
-Dataset Description
+---
+    
+## Dataset Description
 
 The project uses a combination of historical air quality, meteorological, and traffic datasets to predict the Air Quality Index (AQI).
 
@@ -63,7 +65,9 @@ Meteorological Data: Includes temperature, humidity, wind speed, and pressure re
 
 Traffic and Urban Data: Captures vehicle density or congestion levels from selected regions.
 
- Dataset Features:
+---
+
+## Dataset Features:
 Feature	Description
 Date	Timestamp of data collection
 City	Name of the monitoring city
@@ -86,6 +90,7 @@ The Streamlit Dashboard is designed for interactive exploration and forecasting 
 Main Sections:
 
 Home Page: Introduction and project overview.
+
 
 Dataset Analysis Mode:
 
@@ -120,7 +125,7 @@ LSTM (Deep Learning)	5.84	4.32	0.93
 
 The LSTM model achieved the highest accuracy, demonstrating strong capability in capturing temporal dependencies in AQI time-series data.
 
-🔍 Key Insights:
+ Key Insights:
 
 PM2.5 and PM10 are the most influential pollutants affecting AQI.
 
@@ -128,7 +133,7 @@ AQI tends to worsen during low wind speed and high humidity conditions.
 
 Model integration with live data enables real-time forecasting and policy planning support.
 
-🧩 What Each Code File Does
+What Each Code File Does
 model_training.py
 
 Loads and preprocesses the dataset.
@@ -148,7 +153,6 @@ Evaluates each model using RMSE, MAE, and R².
 Saves a scaler.pkl for consistent normalization during prediction.
 
 dashboard.py
-
 Launches the Streamlit dashboard interface.
 
 Allows dataset upload or exploration from local files.
@@ -162,18 +166,14 @@ Integrates OpenWeatherMap API to fetch live data.
 Visualizes real-time AQI forecasts (next 12–48 hours).
 
 requirements.txt
-
 Lists all dependencies required to run the project (e.g., pandas, streamlit, xgboost, etc.).
 
 urban_air_quality_dataset.csv
-
 The cleaned and structured dataset used for both training and visualization.
 
-models/
-
+models
 Directory containing all saved trained models and the scaler file.
 
 visuals/
-
 Contains plots, screenshots, or visual artifacts used in the dashboard and report.
 
