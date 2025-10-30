@@ -51,47 +51,11 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project sh
 - OpenWeatherMap API for live data  
 - Git & GitHub for version control  
 
----
-
-## ⚙️ Installation & Setup
-
-###  Clone the Repository
-```bash
-
-git clone https://github.com/<YOUR-USERNAME>/UrbanAirQuality.git
-cd UrbanAirQuality
-Create and Activate a Virtual Environment
-python -m venv .venv
-.venv\Scripts\activate
-
-Install Required Libraries
-pip install -r requirements.txt
-Model Training
-python model_training.pyrandom_forest_model.pkl
-xgboost_model.pkl
-lstm_model.h5
-scaler.pkl
-
-
- Running the Dashboard
-streamlit run dashboard.py
-
-Project Folder Structure
-UrbanAirQuality/
-│
-├── dashboard.py                 # Streamlit dashboard app
-├── model_training.py            # Model training and evaluation script
-├── urban_air_quality_dataset.csv# Dataset
-├── requirements.txt             # Python dependencies
-├── README.md                    # Documentation
-├── models/                      # Saved trained models
-└── visuals/                     # Screenshots and figures (optional)
-
 Dataset Description
 
 The project uses a combination of historical air quality, meteorological, and traffic datasets to predict the Air Quality Index (AQI).
 
-📂 Data Sources:
+ Data Sources:
 
 Air Quality Data: Contains daily concentrations of major pollutants (PM2.5, PM10, NO₂, CO, SO₂, O₃).
 
@@ -115,7 +79,7 @@ AQI	Computed Air Quality Index label
 
 Data was preprocessed to remove missing values, scale features, and merge multiple data sources into one standardized dataset used for model training and prediction.
 
-💻Dashboard Explanation
+ Dashboard Explanation
 
 The Streamlit Dashboard is designed for interactive exploration and forecasting of air quality trends.
 
@@ -156,7 +120,7 @@ LSTM (Deep Learning)	5.84	4.32	0.93
 
 The LSTM model achieved the highest accuracy, demonstrating strong capability in capturing temporal dependencies in AQI time-series data.
 
- Key Insights:
+🔍 Key Insights:
 
 PM2.5 and PM10 are the most influential pollutants affecting AQI.
 
@@ -164,7 +128,7 @@ AQI tends to worsen during low wind speed and high humidity conditions.
 
 Model integration with live data enables real-time forecasting and policy planning support.
 
-What Each Code File Does
+🧩 What Each Code File Does
 model_training.py
 
 Loads and preprocesses the dataset.
@@ -212,5 +176,4 @@ Directory containing all saved trained models and the scaler file.
 visuals/
 
 Contains plots, screenshots, or visual artifacts used in the dashboard and report.
-
 
