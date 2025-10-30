@@ -259,7 +259,8 @@ Geospatial pollution maps.
 Seasonal AQI trend analysis.
 This depth of EDA supports sound modeling and interpretation.
 
- Conclusion
+---
+###Conclusion
 The project successfully integrates data preprocessing, modeling, and visualization to deliver a comprehensive urban air quality forecasting solution.
 It aligns with the MSDS692 practicum objectives and demonstrates proficiency in data analytics, model evaluation, and dashboard development for environmental sustainability.
 
