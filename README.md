@@ -1,6 +1,6 @@
  🌍 Urban Air Quality Prediction and Analysis Dashboard
 
-## 📘 Project Overview
+##  Project Overview
 The **Urban Air Quality Dashboard** is a data-driven project designed to **analyze, visualize, and forecast air quality (AQI)** across cities using **multi-source environmental, meteorological, and traffic data**.
 
 By leveraging **machine learning and deep learning models**, this dashboard predicts pollution levels, supports **real-time monitoring**, and provides valuable insights for decision-making in **urban sustainability, climate resilience, and public health management**.
@@ -9,7 +9,7 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project de
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Integrate multi-source environmental and meteorological data for urban AQI prediction.  
 - Design an **interactive Streamlit dashboard** for visualizing air quality patterns.  
 - Compare predictive performance across **Random Forest, XGBoost, and LSTM** models.  
@@ -20,17 +20,17 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project de
 
 ## ✨ Key Features
 
-### ✅ Dataset Analysis Mode
+###  Dataset Analysis Mode
 - Analyze historical air quality data with filters and date ranges.  
 - Visualize pollutant patterns, correlations, and spatial intensity.  
 - Train and compare predictive models for AQI forecasting.
 
-### ✅ Real-Time Monitoring Mode
+###  Real-Time Monitoring Mode
 - Fetch **live AQI and weather data** from the OpenWeatherMap API.  
 - Display current pollutant concentrations and weather parameters.  
 - Generate **short-term forecast charts** for the next 12–48 hours.
 
-### ✅ Visualization Highlights
+###  Visualization Highlights
 - AQI trends over time  
 - Correlation heatmaps  
 - Traffic congestion vs. pollution scatterplots  
@@ -41,7 +41,7 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project de
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 **Languages:** Python 3.9+  
 **Libraries & Frameworks:**  
@@ -55,10 +55,10 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project de
 
 ---
 
-## 🧠 Installation & Setup
+##  Installation & Setup
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/<YOUR-USERNAME>/UrbanAirQuality.git
 cd UrbanAirQuality
 2️⃣ Create and Activate a Virtual Environment
@@ -85,7 +85,7 @@ scaler.pkl
 bash
 Copy code
 streamlit run dashboard.py
-📁 Project Folder Structure
+ Project Folder Structure
 bash
 Copy code
 UrbanAirQuality/
@@ -97,7 +97,7 @@ UrbanAirQuality/
 ├── README.md                    # Documentation
 ├── models/                      # Saved trained models
 └── visuals/                     # Screenshots and figures (optional)
-📊 Dataset Features
+ Dataset Features
 Feature	Description
 Date	Timestamp of data collection
 City	Name of the monitoring city
@@ -113,34 +113,39 @@ AQI	Computed Air Quality Index label
 
 The dataset was preprocessed to remove missing values, scale features, and merge multiple data sources into one standardized dataset used for model training and prediction.
 
-🖥️ Dashboard Explanation
+
+---
+
+## Dashboard Explanation
 The Streamlit Dashboard is designed for interactive exploration and forecasting of air quality trends.
 
-🔹 Home Page
+###  Home Page
 Provides project introduction and overview.
 
-🔹 Dataset Analysis Mode
+###  Dataset Analysis Mode
 Allows users to upload or explore the historical dataset.
 
 Displays pollutant distributions, time trends, and correlations.
 
-🔹 Model Comparison Section
+###  Model Comparison Section
 Visualizes performance metrics for Random Forest, XGBoost, and LSTM models.
 
 Displays RMSE, MAE, and R² side-by-side for comparison.
 
-🔹 Real-Time Monitoring Mode
+###  Real-Time Monitoring Mode
 Fetches live AQI and weather data from the OpenWeatherMap API.
 
 Predicts next 12–48 hours of AQI values.
 
-🔹 Forecast Visualization
+###  Forecast Visualization
 Shows predicted vs. actual AQI over time through interactive line charts.
 
 The dashboard offers a clean, user-friendly interface with responsive charts powered by Plotly and Matplotlib.
 
-📈 Results and Findings
-🧮 Model Performance Summary
+---
+
+###  Results and Findings
+ Model Performance Summary
 Model	RMSE	MAE	R²
 Random Forest	6.85	5.20	0.89
 XGBoost	6.12	4.75	0.91
@@ -148,14 +153,16 @@ LSTM (Deep Learning)	5.84	4.32	0.93
 
 The LSTM model achieved the highest accuracy, demonstrating strong capability in capturing temporal dependencies in AQI time-series data.
 
-🔍 Key Insights
+ Key Insights
 PM2.5 and PM10 are the most influential pollutants affecting AQI.
 
 Low wind speed and high humidity are linked with poor air quality.
 
 The integration of live data enables real-time forecasting and supports urban policy planning.
 
-🧩 Code Structure and Functionality
+---
+
+###   Code Structure and Functionality
 model_training.py
 Loads and preprocesses the dataset.
 
@@ -199,7 +206,9 @@ Contains all trained model files (.pkl, .h5) and the scaler.pkl.
 visuals/
 Contains plots, screenshots, or visual outputs used in the dashboard and report.
 
-🧾 Evaluation Based on Project Rubric Criteria
+---
+
+###  Evaluation Based on Project Rubric Criteria
 1️⃣ Problem Source
 The project is based on a real-world environmental challenge — increasing air pollution and its health impacts.
 It uses global datasets and APIs to ensure relevance, originality, and practical application for urban sustainability and policy analysis.
