@@ -18,7 +18,7 @@ Developed as part of the **MSDS692 – Data Science Practicum**, this project de
 
 ---
 
-## ✨ Key Features
+##   Key Features
 
 ###  Dataset Analysis Mode
 - Analyze historical air quality data with filters and date ranges.  
